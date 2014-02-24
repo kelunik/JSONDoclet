@@ -18,26 +18,10 @@ import com.sun.javadoc.RootDoc;
  */
 public class DocletJSON extends Doclet {
 	/**
-	 * basic constructor
-	 */
-	public DocletJSON() {
-		
-	}
-	
-	/**
-	 * basic constructor with useless param
-	 * 
-	 * @param str some param
-	 */
-	public DocletJSON(String str) {
-		
-	}
-	
-	/**
 	 * called by javadoc
 	 * 
-	 * @param root anything
-	 * @return something
+	 * @param root
+	 * @return <code>true</code> for success, <code>false</code> for failure
 	 */
 	public static boolean start(RootDoc rootDoc) {
 		JSONArray data = new JSONArray();
